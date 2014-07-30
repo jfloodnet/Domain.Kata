@@ -40,8 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LocationPropertyMatchers\HaversineLocationPropertyMatcher.cs" />
+    <Compile Include="LocationPropertyMatchers\MicrosoftsGeoCoordinatePropertyMatcher.cs" />
+    <Compile Include="Specifications\AndPropertyMatcher.cs" />
+    <Compile Include="LocationPropertyMatchers\Coordinate.cs" />
     <Compile Include="Ensure.cs" />
     <Compile Include="IPropertyMatcher.cs" />
+    <Compile Include="AgencyCodePropertyMatcher.cs" />
+    <Compile Include="Specifications\CompositePropertyMatcher.cs" />
+    <Compile Include="Specifications\OrPropertyMatcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Property.cs" />
     <Compile Include="PunctuationIgnorantPropertyMatcher.cs" />
