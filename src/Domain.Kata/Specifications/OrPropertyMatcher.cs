@@ -1,4 +1,6 @@
-﻿namespace Domain.Kata.Specifications
+﻿using Domain.Kata.Model;
+
+namespace Domain.Kata.Specifications
 {
     public class OrPropertyMatcher : IPropertyMatcher
     {
