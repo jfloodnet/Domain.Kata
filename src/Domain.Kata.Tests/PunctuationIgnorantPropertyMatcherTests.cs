@@ -10,7 +10,7 @@ namespace Domain.Kata.Tests
     public class PunctuationIgnorantPropertyMatcherTests
     {
         [Theory, AutoData]
-        public void Should_throw_argumentnull_exception_for_null_agency_property(
+        public void Should_throw_argument_null_exception_for_null_agency_property(
             Property databaseProperty,
             PunctuationIgnorantPropertyMatcher sut)
         {
@@ -18,7 +18,7 @@ namespace Domain.Kata.Tests
         }
 
         [Theory, AutoData]
-        public void Should_throw_argumentnull_exception_for_null_database_property(
+        public void Should_throw_argument_null_exception_for_null_database_property(
             Property agencyProperty,
             PunctuationIgnorantPropertyMatcher sut)
         {
@@ -26,7 +26,7 @@ namespace Domain.Kata.Tests
         }
 
         [Theory, AutoData]
-        public void Should_match_property(
+        public void When_all_characters_are_the_same_except_punctuation_then_should_match_property(
             Property agencyProperty, 
             Property databaseProperty, 
             PunctuationIgnorantPropertyMatcher sut)
@@ -41,7 +41,7 @@ namespace Domain.Kata.Tests
         }
 
         [Theory, AutoData]
-        public void Should_not_match_property(
+        public void When_some_words_are_different_then_should_NOT_match_property(
             Property agencyProperty,
             Property databaseProperty,
             PunctuationIgnorantPropertyMatcher sut)

@@ -19,45 +19,38 @@ namespace Domain.Kata.Tests
         }
 
         [Fact]
-        public void When_specifying_AND_condition_then_should_NOT_match_with_both_false_property_matcher()
+        public void When_specifying_AND_condition_then_should_NOT_match_with_at_least_one_false_property_matcher()
         {
-            var sut = new CompositePropertyMatcher(trueMatcher);
-
-            sut.And(falseMatcher).IsMatch(anonymousProperty, anonymousProperty).ShouldBeFalse();
+            var sut = new CompositePropertyMatcher(trueMatcher).And(falseMatcher);
+            sut.IsMatch(anonymousProperty, anonymousProperty).ShouldBeFalse();
         }
 
         [Fact]
-        public void When_specifying_AND_condition_then_should_match_with_true_property_matcher()
+        public void When_specifying_AND_condition_then_should_match_with_two_true_property_matchers()
         {
-            var sut = new CompositePropertyMatcher(trueMatcher);
-
-            sut.And(trueMatcher).IsMatch(anonymousProperty, anonymousProperty).ShouldBeTrue();
+            var sut = new CompositePropertyMatcher(trueMatcher).And(trueMatcher);
+            sut.IsMatch(anonymousProperty, anonymousProperty).ShouldBeTrue();
         }
 
         [Fact]
         public void When_specifying_OR_condition_then_should_NOT_match_with_both_false_property_matcher()
         {
-            var sut = new CompositePropertyMatcher(falseMatcher);
-
-            sut.Or(falseMatcher).IsMatch(anonymousProperty, anonymousProperty).ShouldBeFalse();
+            var sut = new CompositePropertyMatcher(falseMatcher).Or(falseMatcher);
+            sut.IsMatch(anonymousProperty, anonymousProperty).ShouldBeFalse();
         }
-
 
         [Fact]
         public void When_specifying_OR_condition_then_should_match_with_true_property_matcher()
         {
-            var sut = new CompositePropertyMatcher(trueMatcher);
-
-            sut.Or(trueMatcher).IsMatch(anonymousProperty, anonymousProperty).ShouldBeTrue();
+            var sut = new CompositePropertyMatcher(trueMatcher).Or(trueMatcher);
+            sut.IsMatch(anonymousProperty, anonymousProperty).ShouldBeTrue();
         }
 
-
         [Fact]
-        public void When_specifying_OR_condition_then_should_match_with_a_true_and_false_property_matcher()
+        public void When_specifying_OR_condition_then_should_match_with_at_least_one_property_matcher()
         {
-            var sut = new CompositePropertyMatcher(trueMatcher);
-
-            sut.Or(falseMatcher).IsMatch(anonymousProperty, anonymousProperty).ShouldBeTrue();
+            var sut = new CompositePropertyMatcher(trueMatcher).Or(falseMatcher);
+            sut.IsMatch(anonymousProperty, anonymousProperty).ShouldBeTrue();
         }
     }
 

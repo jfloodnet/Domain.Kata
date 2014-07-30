@@ -40,7 +40,7 @@ namespace Domain.Kata.Tests
         }
 
         [Fact]
-        public void Should_match_property_when_less_than_two_hundred_metres_away()
+        public void When_less_than_two_hundred_metres_away_then_should_match_property()
         {
             agencyProperty.Latitude = 32.999098M;
             agencyProperty.Longitude = 150.998147M;
@@ -48,7 +48,7 @@ namespace Domain.Kata.Tests
         }
 
         [Fact]
-        public void Should_not_match_property_when_more_than_200_metres_away()
+        public void When_more_than_200_metres_away_then_should_NOT_match_property_()
         {
             agencyProperty.Latitude = 32.999053M;
             agencyProperty.Longitude = 150.998054M;

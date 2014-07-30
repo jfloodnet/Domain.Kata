@@ -10,7 +10,7 @@ namespace Domain.Kata.Tests
     public class AgencyCodePropertyMatcherTests
     {
         [Theory, AutoData]
-        public void Should_match_identical_agency_code(
+        public void When_agency_code_is_identical_then_should_match_identical_agency_code(
             Property matchingAgencyProperty,
             AgencyCodePropertyMatcher sut)
         {
@@ -18,7 +18,7 @@ namespace Domain.Kata.Tests
         }
 
         [Theory, AutoData]
-        public void Should_not_match_different_agency_code(
+        public void When_a_different_agency_code_then_should_not_match(
             Property property,
             Property differentPropery,
             AgencyCodePropertyMatcher sut)
@@ -39,7 +39,7 @@ namespace Domain.Kata.Tests
         }
 
         [Theory, AutoData]
-        public void Should_match_when_both_location_and_code_matches(
+        public void When_both_location_and_code_matches_then_should_match(
             Property matchingAgencyProperty,
             HaversineLocationPropertyMatcher locationMatcher,
             AgencyCodePropertyMatcher agencyCodeMatcher)
