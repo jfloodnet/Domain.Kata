@@ -1,3 +1,5 @@
+using Domain.Kata.Model;
+
 namespace Domain.Kata.Specifications
 {
     public class CompositePropertyMatcher : IPropertyMatcher

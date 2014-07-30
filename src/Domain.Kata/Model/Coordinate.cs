@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Domain.Kata.LocationPropertyMatchers
+namespace Domain.Kata.Model
 {
     public struct Coordinate
     {

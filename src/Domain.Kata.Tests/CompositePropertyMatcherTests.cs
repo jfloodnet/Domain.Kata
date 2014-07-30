@@ -1,4 +1,5 @@
-﻿using Domain.Kata.Specifications;
+﻿using Domain.Kata.Model;
+using Domain.Kata.Specifications;
 using Should;
 using Xunit;
 

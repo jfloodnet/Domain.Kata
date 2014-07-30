@@ -1,5 +1,5 @@
 ﻿using System.Device.Location;
-using Domain.Kata.LocationPropertyMatchers;
+using Domain.Kata.Model;
 using Should;
 using Xunit;
 

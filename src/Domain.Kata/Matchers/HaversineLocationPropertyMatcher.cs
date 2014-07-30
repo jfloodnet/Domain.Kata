@@ -1,4 +1,6 @@
-namespace Domain.Kata.LocationPropertyMatchers
+using Domain.Kata.Model;
+
+namespace Domain.Kata.Matchers
 {
     public class HaversineLocationPropertyMatcher : IPropertyMatcher
     {

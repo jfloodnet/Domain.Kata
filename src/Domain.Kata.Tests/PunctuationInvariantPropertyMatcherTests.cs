@@ -1,4 +1,6 @@
-﻿using Ploeh.AutoFixture.Xunit;
+﻿using Domain.Kata.Matchers;
+using Domain.Kata.Model;
+using Ploeh.AutoFixture.Xunit;
 using System;
 using Xunit.Extensions;
 using Should;

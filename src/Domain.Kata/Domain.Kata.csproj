@@ -40,18 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LocationPropertyMatchers\HaversineLocationPropertyMatcher.cs" />
-    <Compile Include="LocationPropertyMatchers\MicrosoftsGeoCoordinatePropertyMatcher.cs" />
+    <Compile Include="Matchers\HaversineLocationPropertyMatcher.cs" />
+    <Compile Include="Matchers\MicrosoftsGeoCoordinatePropertyMatcher.cs" />
+    <Compile Include="Matchers\ReverseWordOrderPropertyMatcher.cs" />
     <Compile Include="Specifications\AndPropertyMatcher.cs" />
-    <Compile Include="LocationPropertyMatchers\Coordinate.cs" />
+    <Compile Include="Model\Coordinate.cs" />
     <Compile Include="Ensure.cs" />
-    <Compile Include="IPropertyMatcher.cs" />
-    <Compile Include="AgencyCodePropertyMatcher.cs" />
+    <Compile Include="Model\IPropertyMatcher.cs" />
+    <Compile Include="Matchers\AgencyCodePropertyMatcher.cs" />
     <Compile Include="Specifications\CompositePropertyMatcher.cs" />
     <Compile Include="Specifications\OrPropertyMatcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Property.cs" />
-    <Compile Include="PunctuationIgnorantPropertyMatcher.cs" />
+    <Compile Include="Model\Property.cs" />
+    <Compile Include="Matchers\PunctuationIgnorantPropertyMatcher.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

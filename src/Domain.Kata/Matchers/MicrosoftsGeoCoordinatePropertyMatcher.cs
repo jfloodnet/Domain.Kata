@@ -1,6 +1,7 @@
 using System.Device.Location;
+using Domain.Kata.Model;
 
-namespace Domain.Kata.LocationPropertyMatchers
+namespace Domain.Kata.Matchers
 {
     public class MicrosoftsGeoCoordinatePropertyMatcher : IPropertyMatcher
     {

@@ -1,10 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Device.Location;
-
-namespace Domain.Kata
+﻿namespace Domain.Kata.Model
 {
     public interface IPropertyMatcher
     {

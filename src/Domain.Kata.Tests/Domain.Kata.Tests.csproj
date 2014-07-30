@@ -58,7 +58,8 @@
     <Compile Include="AgencyCodePropertyMatcherTests.cs" />
     <Compile Include="CompositePropertyMatcherTests.cs" />
     <Compile Include="CoordinateTests.cs" />
-    <Compile Include="TotallyInaccurateLocationPropertyMatcherTests.cs" />
+    <Compile Include="ReverseWordOrderPropertyMatcherTests.cs" />
+    <Compile Include="HaversineLocationPropertyMatcherTests.cs" />
     <Compile Include="PunctuationInvariantPropertyMatcherTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

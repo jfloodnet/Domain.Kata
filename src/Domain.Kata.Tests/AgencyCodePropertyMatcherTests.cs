@@ -1,4 +1,5 @@
-﻿using Domain.Kata.LocationPropertyMatchers;
+﻿using Domain.Kata.Matchers;
+using Domain.Kata.Model;
 using Domain.Kata.Specifications;
 using Ploeh.AutoFixture.Xunit;
 using Should;
