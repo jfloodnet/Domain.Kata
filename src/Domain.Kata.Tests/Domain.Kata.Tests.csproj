@@ -60,7 +60,7 @@
     <Compile Include="CoordinateTests.cs" />
     <Compile Include="ReverseWordOrderPropertyMatcherTests.cs" />
     <Compile Include="HaversineLocationPropertyMatcherTests.cs" />
-    <Compile Include="PunctuationInvariantPropertyMatcherTests.cs" />
+    <Compile Include="PunctuationIgnorantPropertyMatcherTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
