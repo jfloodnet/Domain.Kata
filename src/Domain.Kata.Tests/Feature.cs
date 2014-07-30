@@ -2,11 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Domain.Kata
+namespace Domain.Kata.Tests
 {
-    public class Class1
-    {
-    }
+
 }

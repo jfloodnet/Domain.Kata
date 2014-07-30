@@ -39,4 +39,21 @@ namespace Domain.Kata.Tests
             sut.IsMatch(agencyProperty, databaseProperty).ShouldBeFalse();
         }
     }
+
+    public interface IFlagFeatures
+    {
+        bool IsOn(Feature feature, UserProfile currentUser);
+    }
+
+    public class Feature
+    {
+        public Feature()
+        {
+        }
+    }
+
+    public class FeatureFlagProvider : IFlagFeatures 
+    {
+        
+    }
 }
