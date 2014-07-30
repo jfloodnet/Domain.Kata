@@ -13,7 +13,7 @@ namespace Domain.Kata.Specifications
             this.inner = first;
         }
 
-        public IPropertyMatcher And(IPropertyMatcher matcher)
+        public CompositePropertyMatcher And(IPropertyMatcher matcher)
         {
             Ensure.NotNull(matcher, "matcher");
 
@@ -21,7 +21,7 @@ namespace Domain.Kata.Specifications
                 new AndPropertyMatcher(matcher, inner));
         }
 
-        public IPropertyMatcher Or(IPropertyMatcher matcher)
+        public CompositePropertyMatcher Or(IPropertyMatcher matcher)
         {
             Ensure.NotNull(matcher, "matcher");
 
